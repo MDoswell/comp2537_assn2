@@ -1,0 +1,21 @@
+<%- include("templates/header"); %>
+
+<% if (type == 'string.alphanum') { %>
+    Fields must contain only alphanumeric characters.<br>
+<% }
+if (type == 'string.email') { %>
+    Email invalid.<br>
+<% }
+if (name == '') { %>
+    Name is required.<br>
+<% }
+if (email == '') { %>
+    Email is required.<br>
+<% }
+if (password == '') { %>
+    Password is required.<br>
+<% } %>
+
+<br><a href='/signup'>Try again</a>
+
+<%- include("templates/footer"); %>

@@ -1,0 +1,6 @@
+/node_modules
+package-lock.json
+.env
+My_checklist.txt
+Qoddi_app_URL.txt
+Video_demo_URL.txt

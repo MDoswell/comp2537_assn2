@@ -1,0 +1,13 @@
+<%- include("templates/header") %>
+
+    <% if (loggedIn) { %>
+        <h2>Hello, <%= name %>!</h2>
+        <button class="btn btn-primary mb-1" onclick="window.location.href = '/members'">Go to vegetables</button><br>
+        <button class="btn btn-secondary" onclick="window.location.href = '/logout'">Logout</button>
+    <% } else { %>
+        <h2>Welcome!</h2>
+        <button class="btn btn-primary mb-1" onclick="window.location.href = '/signup'">Sign up</button><br>
+        <button class="btn btn-secondary" onclick="window.location.href = '/login'">Log in</button>
+    <% } %>
+
+<%- include("templates/footer") %>

@@ -1,0 +1,13 @@
+<%- include("templates/header") %>
+
+<% if (error == 'invalid chars') { %>
+    Invalid characters in email or password.<br><br>
+<% } else if (error == 'no user') { %>
+    User not found.<br><br>
+<% } else if (error == 'bad password') { %>
+    Invalid password.<br><br>
+<% } %>
+
+<a href='/login'>Try again</a>
+
+<%- include("templates/footer"); %>
